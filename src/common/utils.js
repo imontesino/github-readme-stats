@@ -310,6 +310,7 @@ const SECONDARY_ERROR_MESSAGES = {
   INVALID_AFFILIATION: `Invalid owner affiliations. Valid values are: ${OWNER_AFFILIATIONS.join(
     ", ",
   )}`,
+  WAKATIME_USER_NOT_FOUND: "Make sure you have a public WakaTime profile",
 };
 
 /**
@@ -330,6 +331,7 @@ class CustomError extends Error {
   static USER_NOT_FOUND = "USER_NOT_FOUND";
   static GRAPHQL_ERROR = "GRAPHQL_ERROR";
   static INVALID_AFFILIATION = "INVALID_AFFILIATION";
+  static WAKATIME_ERROR = "WAKATIME_ERROR";
 }
 
 /**
